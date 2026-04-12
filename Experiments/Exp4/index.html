@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-3">🎓 Student Result Calculator</h2>
+                        <p class="text-center text-muted">
+                            Enter number of subjects and calculate your result
+                        </p>
+                        <div class="mb-3">
+                            <label class="form-label">Number of Subjects</label>
+                            <input 
+                            type="number"
+                            id="numSubjects"
+                            class="form-control"
+                            placeholder="Enter number of subjects"
+                            min="1"
+                            max="20"
+                            >
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary"
+                            onclick="calculateResult()">
+                            Calculate Result
+                        </button>
+                        </div>
+                        <div id="resultBox" class="mt-4 d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

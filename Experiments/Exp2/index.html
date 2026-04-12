@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore — Premium Tech Products</title>
+<!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">🖥️ TechStore</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ============ HERO BANNER ============ -->
+  <section class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to TechStore</h1>
+      <p class="lead">Discover cutting-edge tech products at unbeatable prices.</p>
+      <a href="#products" class="btn btn-light btn-lg mt-3">Shop Now</a>
+    </div>
+  </section>
+  <!-- ============ PRODUCT SECTION ============ -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Our Featured Products</h2>
+      <p class="text-center text-muted mb-5">Top-rated tech products, carefully selected for you.</p>
+      <div class="row g-4">
+        <!-- Card 1 - Laptop -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=250&fit=crop"
+              class="card-img-top"
+              alt="ProBook Laptop"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">ProBook Laptop</h5>
+                <span class="badge bg-success">New</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Ultra-slim 15.6" laptop with Intel Core i7, 16GB RAM, and 512GB SSD.
+              </p>
+              <p class="fw-bold fs-5 text-primary">$1,299.00</p>
+              <button
+                type="button"
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 - Headset -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=250&fit=crop"
+              class="card-img-top"
+              alt="SoundMax Headset"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">SoundMax Headset</h5>
+                <span class="badge bg-danger">Sale</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Immersive 7.1 surround sound gaming headset with noise-cancelling mic and RGB lighting.
+              </p>
+              <p class="fw-bold fs-5 text-primary">$89.99 <s class="text-muted fs-6">$129.99</s></p>
+              <button
+                type="button"
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 - Watch -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=250&fit=crop"
+              class="card-img-top"
+              alt="ChronoX Smartwatch"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">ChronoX Watch</h5>
+                <span class="badge bg-success">New</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Premium smartwatch with AMOLED display, health tracking, GPS, and 7-day battery life.
+              </p>
+              <p class="fw-bold fs-5 text-primary">$349.00</p>
+              <button
+                type="button"
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="fw-bold mb-1">🖥️ TechStore</h5>
+          <p class="text-muted mb-0 small">&copy; 2024 TechStore. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white text-decoration-none me-3">Twitter</a>
+          <a href="#" class="text-white text-decoration-none me-3">Instagram</a>
+          <a href="#" class="text-white text-decoration-none me-3">LinkedIn</a>
+          <a href="#" class="text-white text-decoration-none">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ============ PRODUCT MODAL ============ -->
+  <div
+    class="modal fade"
+    id="productModal"
+    tabindex="-1"
+    aria-labelledby="productModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="productModalLabel">ProBook Laptop - Product Details</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop"
+                class="img-fluid rounded"
+                alt="ProBook Laptop"
+              />
+            </div>
+            <div class="col-md-7">
+              <h4>ProBook Laptop</h4>
+              <span class="badge bg-success mb-3">New Arrival</span>
+              <p class="text-muted">
+                The ProBook is engineered for professionals who demand performance.
+                Featuring an Intel Core i7 processor and a lightning-fast NVMe SSD,
+                it handles everything from video editing to software development.
+              </p>
+              <ul class="list-unstyled">
+                <li>✅ Intel Core i7 12th Gen</li>
+                <li>✅ 16GB DDR5 RAM</li>
+                <li>✅ 512GB NVMe SSD</li>
+                <li>✅ 15.6" FHD IPS Display</li>
+                <li>✅ 12-hour battery life</li>
+                <li>✅ Backlit keyboard</li>
+              </ul>
+              <h4 class="text-primary">$1,299.00</h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
