@@ -5,17 +5,19 @@
 }
 .navbar{
     height:60px;
-    background-color:#0F1111;
+    background-color:#131921;
     font-size:14px;
     color:white;
     display:flex;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    padding:0px 15px;
 }
-
 .nav-logo{
     height:50px;
     width:113.98px;
+    display:flex;
+    flex-direction:row;
 }
 .logo{
     background-image:url("amazon_logo.png");
@@ -25,19 +27,25 @@
 }
 .border{
     border:1.3px solid transparent;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+    padding:0 8px;
+
 }
 .border:hover{
-    border:1.3px solid white;
+    border:1px solid white;
 }
 
-**box2 styling
-
-
-.nav-address{
-    width:91px;
-    height:60px;
-    font:14px;
+.language-selector{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
 }
+
+
 .add-first{
     color:#CCCCCC;
     font-size:0.85rem;
@@ -55,13 +63,16 @@
 .nav-search{
     display:flex;
     justify-content:space-evenly;
-    background-color:pink;
+    background-color:#e6e7e6;
     height:40px;
     border-radius:4px;
-    width:500px;
+    min-width:500px;
+    flex:1;
+    margin:0 10px;
+    max-width:550px;
 }
 .search-select{
-    background-color:#f3f3;
+    background-color:#e6e7e6;
     width:45px;
     height:38px;
     text-align:center;
@@ -96,7 +107,6 @@
 /* box- 5 */
 .nav-sign-in{
     width:80px;
-    height:35px;
 }
 span{
     font-size:0.7rem;
@@ -124,8 +134,22 @@ span{
     align-items:center;
     justify-content:space-evenly;
 }
+.panel-all{
+    height:40px;
+    display:flex;
+    align-items:center;
+    margin-right:auto;
+    padding:0 8px;
+    cursor:pointer;
+}
+.panel-all:hover{
+    border:1px solid white;
+}
 .panel-ops p{
-    display:inline;
+    display:inline-flex;
+    align-items:center;
+    height:40px;
+    cursor:pointer;
     margin-left:15px;
 
 }
@@ -133,6 +157,9 @@ span{
     width:95%;
     font-size:0.9rem;
     padding:0 5px;
+}
+.panel-ops p:hover{
+    border:1px solid white;
 }
 .panel-all{
     margin-right:auto;
@@ -167,15 +194,17 @@ span{
 }
 
 .box{
-    height:400px;
+    height:auto;
+    min-height:400px;
     width:23%;
     padding:20px 0px 15px;
     background-color:white;
     margin-top:5px;
+    overflow:visible;
 
 }
 .box-image{
-    height:300px;
+    height:250px;
     background-size:cover;
     margin-top:1rem;
     margin-bottom:1rem;
@@ -187,9 +216,13 @@ span{
 }
 .box-content p{
     color:#007185;
+    margin-top:10px;
+    padding-bottom:10px;
+    display:block;
 }
 .box-content p:hover{
     text-decoration:underline;
+    cursor:pointer;
 }
 /* Footer */
 footer{
@@ -222,6 +255,7 @@ ul a{
 }
 ul a:hover{
     text-decoration:underline;
+    cursor:pointer;
 }
 .foot-panel3{
     background-color:#222f3d;
@@ -260,4 +294,39 @@ ul a:hover{
 }
 .pages a{
     padding:25px 5px 0px;
+}
+.grid-box{
+    height:auto;
+    min-height:400px;
+    width:23%;
+    padding:20px 0px 15px;
+    background-color:white;
+    margin-top:5px;
+    overflow:visible;
+}
+.grid-box h2{
+    margin-left:1rem;
+}
+.grid-items{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:0.85rem;
+    gap:8px 8px;
+    row-gap:20px;
+}
+.grid-item p{
+    font-size:14px;
+}
+.grid-item img{
+    height:120px;
+    width:130px;
+}
+.grid-box a{
+    height:17px;
+    color:#007185;
+    margin-left:1rem;
+}
+.grid-box a:hover{
+    cursor:pointer;
+    text-decoration:underline;
 }
