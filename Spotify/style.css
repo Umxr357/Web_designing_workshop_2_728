@@ -1,0 +1,326 @@
+body{
+font-family: "Montserrat", sans-serif;
+margin:0;
+background-color:black;
+color:#fff;
+padding:0;
+box-sizing:border-box;
+}
+/* Navbar */
+.navbar {
+    height: 64px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0 16px;    /* top-bottom 0, left-right 16px */
+    margin: 0;          /* margin: 0 karo */
+}
+
+.icons {
+    height: 40px;       
+    width: 40px;
+    display:flex;
+
+}
+.logo{
+    background:url("./assests/logo3.png");
+    width:40px;
+    height:40px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.home{
+    height:3rem;
+    width:3rem;
+    margin-left:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#1F1F1F;
+    border-radius:50%;
+    color:#B3B3B3;
+}
+.home:hover{
+    transform:scale(1.05);
+    color:white;
+}
+.search-bar{
+    height:48px;
+    width:480px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background-color:#1F1F1F;
+    margin:0px 15px;
+    transition:transform 0.2s ease , background-color 0.2s ease;
+}
+.search-bar:hover{
+    background-color:#2a2a2a;
+    border:1px solid gray;
+    cursor:text;
+}
+.search-icon{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    gap:10px;
+    /* margin-left:12px; */
+    padding:12px;
+}
+.search-input{
+    border:none;
+    outline:none;
+    background:transparent;
+    /* width:379px; */
+    font-size:14px;
+    color:white;
+    /* padding:8px 96px 12px 48px; */
+
+}
+.browse-icon{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    width:100%;
+    gap:10px;
+    /* margin-left:12px; */
+    padding:12px;
+}
+.explore-premium{
+    color:black;
+    background-color:#FFFFFF;
+    height:25px;
+    display:flex;
+    align-items:center;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:transform 0.2s ease,background-color 0.2s ease;
+}
+.explore-premium{
+    padding:2px 16px;
+}
+.explore-premium:hover{
+    transform:scale(1.05);
+    background-color:white;
+}
+.download-app{
+    color:#B3B3B3;
+    margin-left:12px;
+    font-weight:600;
+    cursor:pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    padding:0px 12px;
+}
+.download-app:hover{
+    /* font-weight:700; */
+    transform:scale(1.05);
+    color:white;
+}
+.bell-icon{
+    margin-left:10px;
+    color:#FFFFFF;
+    opacity:0.7;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.bell-icon:hover{
+    transform:scale(1.05);
+    color:#FFFFFF;
+    opacity:1;
+}
+.friend-activity{
+    margin-left:20px;
+    opacity:0.7;
+}
+.friend-activity:hover{
+    opacity:1;
+}
+.circle{
+    height:2rem;
+    width:2rem;
+    background-color:#FF6437;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:black;
+}
+.user-id{
+    height:3rem;
+    width:3rem;
+    background-color:#1F1F1F;
+    margin-left:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-weight:600;
+}
+.user-id:hover{
+    background-color:#2a2a2a;
+    cursor:pointer;
+}
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    flex-grow:1;
+    gap:16px;
+}
+.library-section{
+    background-color:#121212;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+.icon-btn{
+    height:2rem;
+    width:2rem;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-end;
+    background-color:#121212;
+    color:white;
+    background:none;
+    border:none;
+}
+.section{
+    width:280px;
+    border-radius:15px;
+    height:auto;
+}
+.library{
+    background-color:#121212;
+    display:flex;
+    align-items:center;
+    color:white;
+    width:248px;
+    padding:16px 16px 8px;
+    justify-content:space-between;
+}
+button{
+    background:none;
+    color:white;
+    border:none;
+    height:2.1875rem;
+    width:2.1875rem;
+    padding:8px;
+}
+.buttons{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+.plus{
+    background-color:#1F1F1F;
+    border-radius:50%;
+}
+.library b{
+    margin-left:0.75rem;
+}
+.filter-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:248px;
+    background-color:#121212;
+    padding:8px 16px 8px;
+}
+.filter-btn{
+    gap:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:2rem;
+    background-color:#2a2a2a;
+    white-space:nowrap;
+    border:none;
+    border-radius:20px;
+    padding:4px 12px;
+}
+.one{
+    width:4.75rem;
+}
+.two{
+    width:8.75rem;
+    margin-left:0.5rem;
+}
+.right-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    margin-left:13px;
+    background-color:#1F1F1F;
+    border-radius:50%;
+}
+.second-search-bar{
+    width:264px;
+    background-color:#121212;
+    padding:2px 8px 0px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.recent-icon{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+.fa-bars{
+    margin-left:10px;
+    margin-right:9px;
+}
+.playlist-container{
+    height:400px;
+    background-color:#121212;
+    display:flex;
+    flex-direction:column;
+    overflow-y:scroll;
+}
+.playlist-item{
+    width:264px;
+    height:64px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.playlist-item img{
+    height:48px;
+    width:48px;
+    border-radius:4px;
+    object-fit:cover;
+    margin-left:1.1rem;
+}
+.playlist-info{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    margin-left:1rem;
+    justify-content:center;
+}
+.title{
+    color:#1ed760;
+    font-size:1rem;
+    font-weight:470;
+}
+.subtitle {
+    font-size:0.875rem;
+    font-weight:400;
+    color:#a7a7a7;
+    font-weight:500;
+    margin-top:6px;
+}
+.subtitle i{
+        margin-right:4px;
+        font-size:0.65rem;
+
+}

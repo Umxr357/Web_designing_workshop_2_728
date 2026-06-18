@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Responsive Bootstrap Page</title>
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+    /* Custom styles layered on top of Bootstrap */
+    body {
+font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    }
+    header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    }
+    nav {
+    background-color: #343a40;
+    }
+    nav a {
+    color: #ced4da !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    }
+    nav a:hover {
+    color: #ffffff !important;
+    }
+    .content-section {
+    padding: 40px 0;
+    }
+    .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    .card h3 {
+    color: #0d6efd;
+    }
+    footer {
+    background-color: #343a40;
+    color: #adb5bd;
+    text-align: center;
+    padding: 20px 0;
+    }
+  </style>
+</head>
+ <body>
+  <!-- ========================
+       SECTION 1: HEADER
+  ========================= -->
+  <header>
+    <div class="container">
+      <h1>My Responsive Website</h1>
+      <p class="lead">Built with Bootstrap Grid System</p>
+    </div>
+  </header>
+
+  <!-- ========================
+       SECTION 2: NAVIGATION BAR
+  ========================= -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <!-- Brand / Logo -->
+      <a class="navbar-brand text-white fw-bold" href="#">MySite</a>
+      <!-- Hamburger Toggle (visible on small screens) -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================
+       SECTION 3: CONTENT SECTION
+  ========================= -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Our Content</h2>
+      <div class="row">
+        <!-- Column 1: Full width on small, half width on medium+ -->
+        <div class="col-12 col-md-6">
+        <div class="card">
+            <h3>About Us</h3>
+            <p>
+            Welcome to our website. We are a passionate team of developers
+            dedicated to building beautiful, responsive, and accessible
+            web experiences for users across all devices and screen sizes.
+            </p>
+            <p>
+            Our mission is simple: make the web work for everyone,
+            everywhere - from the latest MacBook Pro to an entry-level Android phone.
+            </p>
+            <a href="#" class="btn btn-primary mt-2">Learn More</a>
+        </div>
+        </div>
+        <!-- Column 2: Full width on small, half width on medium+ -->
+        <div class="col-12 col-md-6">
+        <div class="card">
+            <h3>Our Services</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">🎨 UI/UX Design</li>
+              <li class="list-group-item">💻 Web Development</li>
+              <li class="list-group-item">📱 Mobile-Responsive Layouts</li>
+              <li class="list-group-item">⚙️ Performance Optimization</li>
+              <li class="list-group-item">🔒 Security & Maintenance</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary mt-3">View All Services</a>
+          </div>
+        </div>
+      </div>
+      <!-- END ROW -->
+    </div>
+    <!-- END CONTAINER -->
+  </section>
+
+  <!-- ========================
+    SECTION 4: FOOTER
+  ========================= -->
+  <footer>
+    <div class="container">
+    <p class="mb-0">
+        &copy; 2025 Pranshi Verma. All rights reserved. | Built with ❤️ using Bootstrap
+    </p>
+    </div>
+  </footer>
+
+<!-- Bootstrap 5 JS Bundle (for navbar toggle to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
