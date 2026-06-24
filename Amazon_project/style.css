@@ -379,7 +379,6 @@ ul a:hover{
     text-decoration:underline;
 }
 
-/* Cart Sidebar */
 .cart-sidebar {
     position: fixed;
     top: 0;
@@ -443,7 +442,6 @@ ul a:hover{
     cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .box, .grid-box {
         width: 48%;

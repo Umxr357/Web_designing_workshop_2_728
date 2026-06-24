@@ -41,12 +41,11 @@ public class Employee {
         this.salary = salary;
     }
 }
-// EmployeeRepository.java
 package com.example.employeeapi;
 import org.springframework.data.jpa.repository.JpaRepository;
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 }
-// EmployeeService.java
+
 package com.example.employeeapi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
